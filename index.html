@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>NASA</title>
+<link rel=stylesheet href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="sun">
+      <img  src="./images/sun.png" alt="sun">
+    </div>
+    <div class="mercury"></div>
+    <div class="venus"></div>
+    <div class="earth">
+      <div class="moon"></div>
+      <div class="comet"></div>
+    </div>
+    <div class="mars"></div>
+    <div class="jupiter"></div>
+    <div class="saturn"></div>
+    <div class="uranus"></div>
+    <div class="neptune"></div>
+    <div class="pluto">
+    </div>
+  </div>
+  <div class="sumario">
+    <h2 id="textsummary">SUMMARY</h2>
+    <div class="todos">
+        <div class="card">
+            <div class="imagemcardsun">
+                <img src="./images/sun.png" alt="">
+            </div>
+            <div class="text">
+                <h2>SUN</h2>
+                <p id="info">The Sun is a G-class shineing yellow dwarf star and the most massive body in the Solar System.</p>
+            </div>
+            <div class="button">
+                <button onclick="sun()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcardsun">
+                <img src="./images/mercury.png" alt="">
+            </div>
+            <div class="text">
+                <h2>VENUS</h2>
+                <p id="info">Small planet, close to the Sun, cratered surface, almost no atmosphere, extreme temperatures.</p>
+            </div>
+            <div class="button">
+                <button onclick="venus()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcardsun">
+                <img src="./images/venus.png" alt="" >
+            </div>
+            <div class="text">
+                <h2>MERCURY</h2>
+                <p id="info">Similar to Earth, dense atmosphere of carbon dioxide, intense greenhouse effect, super-hot surface.</p>
+            </div>
+            <div class="button">
+                <button onclick="mercury()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcardearth">
+                <img src="./images/earth.png" alt="" >
+            </div>
+            <div class="text">
+                <h2>EARTH</h2>
+                <p id="info">The only planet with known life, it has an atmosphere rich in oxygen and liquid water.</p>
+            </div>
+            <div class="button">
+                <button onclick="earth()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcardmoon">
+                <img src="./images/moon.png" alt="" >
+            </div>
+            <div class="text">
+                <h2>MOON</h2>
+                <p id="info">The Moon stabilizes the Earth's tilt, helping to maintain a stable climate, and causes the tides.</p>
+            </div>
+            <div class="button">
+                <button onclick="moon()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcardsun">
+                <img src="./images/mars.png" alt="" >
+            </div>
+            <div class="text">
+                <h2>MARS</h2>
+                <p id="info">"Red planet" with iron oxide surface, Olympus Mons (largest mountain in the Solar System), vast canyons.</p>
+            </div>
+            <div class="button">
+                <button onclick="mars()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcardsun">
+                <img src="./images/jupiter.png" alt="" >
+            </div>
+            <div class="text">
+                <h2>JUPITER</h2>
+                <p id="info">largest planet, turbulent atmosphere with Great Red Spot, 79 moons, including Ganymede.</p>
+            </div>
+            <div class="button">
+                <button onclick="jupiter()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcardsaturn">
+                <img src="./images/saturn.png" alt="" >
+            </div>
+            <div class="text">
+                <h2>SATURN</h2>
+                <p id="info">System of ice rings and rock, more than 80 moons, including Titan with dense atmosphere.</p>
+            </div>
+            <div class="button">
+                <button onclick="saturn()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcardsun">
+                <img src="./images/pluto.png" alt="" >
+            </div>
+            <div class="text">
+                <h2>PLUTO</h2>
+                <p id="info">located in the Kuiper Belt, it was reclassified as a dwarf planet in 2006. Small, icy and full of mysteries.</p>
+            </div>
+            <div class="button">
+                <button onclick="pluto()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcardearth">
+                <img src="./images/neptune.png" alt="" >
+            </div>
+            <div class="text">
+                <h2>NEPTUNE</h2>
+                <p id="info"> Incredibly strong winds. A deep blue color and an atmosphere composed of hydrogen, helium and methane.</p>
+            </div>
+            <div class="button">
+                <button onclick="neptune()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcarduranus">
+                <img src="./images/uranus.png" alt="" >
+            </div>
+            <div class="text">
+                <h2>URANUS</h2>
+                <p id="info">The fastest in the Solar System. It has a deep blue color and an atmosphere of hydrogen and methane.</p>
+            </div>
+            <div class="button">
+                <button onclick="uranus()">Risks to planet earth</button>
+            </div>
+        </div>
+        <div class="card">
+            <div class="imagemcardsun">
+                <img src="./images/kisspng-bolide-meteor-download-fireball-meteor-5a7a0941dc2395.9914061715179472019017.png" alt="" >
+            </div>
+            <div class="text">
+                <h2>METEOR</h2>
+                <p id="info">Meteors are pieces of rock or metal that enter Earth's atmosphere and burn, creating a luminous trail.</p>
+            </div>
+            <div class="button">
+                <button onclick="meteor()">Risks to planet earth</button>
+            </div>
+        </div>
+    </div>
+  </div>
+
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
